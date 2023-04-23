@@ -9,7 +9,6 @@ int print_binary(va_list list)
 	unsigned int num;
 	int i, len;
 	char *str;
-	char *rev;
 
 	num = va_arg(list, unsigned int);
 	if (num == 0)
@@ -30,11 +29,7 @@ int print_binary(va_list list)
 		num = num / 2;
 	}
 	str[i] = '\0';
-	rev = rev_str(str);
-	if (rev == NULL)
-		return (-1);
-	print_base(rev);
+	put_rev(str);
 	free(str);
-	free(rev);
 	return (len);
 }
