@@ -28,7 +28,7 @@ int print_string(va_list list)
 	return (i);
 }
 /**
- * print_percent - Prints a percent symbol
+ * putper - Prints a percent symbol
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
