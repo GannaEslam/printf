@@ -33,7 +33,7 @@ int print_binary(va_list list)
 	rev = rev_str(str);
 	if (rev == NULL)
 		return (-1);
-	print_base(rev);	
+	print_base(rev);
 	free(str);
 	free(rev);
 	return (len);
