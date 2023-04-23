@@ -8,23 +8,23 @@
  */
 int _printf(const char *format, ...)
 {
-        int printed_chars;
-        va_list args;
-        conver_t ls[] = {
-                {"c", _putc},
-                {"s", print_string},
-                {"%", putper},
-                {NULL, NULL}
-        };
+	int printed_chars;
+	va_list args;
+	conver_t ls[] = {
+		{"c", _putc},
+		{"s", print_string},
+		{"%", putper},
+		{NULL, NULL}
+	};
 
-        if (format == NULL)
-        {
-                return (-1);
-        }
+	if (format == NULL)
+	{
+		return (-1);
+	}
 
-        va_start(args, format);
-        printed_chars = parser(format, ls, args);
-        va_end(args);
+	va_start(args, format);
+	printed_chars = parser(format, ls, args);
+	va_end(args);
 
-        return (printed_chars);
+	return (printed_chars);
 }
