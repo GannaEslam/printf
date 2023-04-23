@@ -9,7 +9,6 @@ int print_binary(va_list list)
 	unsigned int num;
 	int i, len;
 	char *str;
-	
 
 	num = va_arg(list, unsigned int);
 	if (num == 0)
