@@ -25,7 +25,6 @@ int _putchar(char);
 int _putc(va_list);
 int print_string(va_list);
 int putper(__attribute__((unused))va_list list);
-int _putbinary(va_list ls);
 void put_rev(char *s);
 unsigned int base_length(unsigned int n, int b);
 #endif
