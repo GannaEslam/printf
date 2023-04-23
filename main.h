@@ -24,4 +24,5 @@ int _printf(const char *format, ...);
 int _putchar(char);
 int _putc(va_list);
 int print_string(va_list);
+int putper(__attribute__((unused))va_list list);
 #endif
