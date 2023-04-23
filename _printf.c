@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-        int printed_chars;
+	int printed_chars;
         va_list args;
         conver_t ls[] = {
                 {"c", _putc},
