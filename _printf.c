@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	conver_t ls[] = {
 		{"c", _putc},
 		{"s", print_string},
-		{"b", _putbinary},
+		{"b", print_binary},
 		{"%", putper},
 		{NULL, NULL}
 	};
