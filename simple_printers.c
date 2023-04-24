@@ -35,7 +35,7 @@ int print_rev(va_list ap, params_t *params)
 	(void)params;
 	switch ((int)(!*str))
 			case 1:
-				*str = NULL_STRING;
+				str = NULL_STRING;
 	if (str)
 	{
 		for (len = 0; *str; str++)

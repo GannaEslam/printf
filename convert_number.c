@@ -50,8 +50,8 @@ int print_HEX(va_list ap, params_t *params)
 	else
 		ll = (unsigned int)va_arg(ap, unsigned int);
 
-	str = convert(l, 16, CONVERT_UNSIGNED, params);
-	if (params->hashtag_flag && l)
+	str = convert(ll, 16, CONVERT_UNSIGNED, params);
+	if (params->hashtag_flag && ll)
 	{
 		*--str = 'X';
 		*--str = '0';
@@ -97,9 +97,9 @@ int print_octal(va_list ap, params_t *params)
 		ll = (unsigned short int)va_arg(ap, unsigned int);
 	else
 		ll = (unsigned int)va_arg(ap, unsigned int);
-	str = convert(l, 8, CONVERT_UNSIGNED, params);
+	str = convert(ll, 8, CONVERT_UNSIGNED, params);
 
-	if (params->hashtag_flag && l)
+	if (params->hashtag_flag && ll)
 		*--str = '0';
 	params->unsign = 1;
 	return (c += print_number(str, params));
