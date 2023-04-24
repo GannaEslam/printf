@@ -6,6 +6,6 @@
 int main(void)
 {
     
-    _printf("%b\n", 989);
+    _printf("%b\n", 9899);
     return (0);
 }

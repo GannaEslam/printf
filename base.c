@@ -6,8 +6,8 @@
  */
 int print_binary(va_list list)
 {
-	unsigned int num;
-	int i, len;
+	unsigned int num, len;
+	int i;
 	char *str;
 
 	num = va_arg(list, unsigned int);
